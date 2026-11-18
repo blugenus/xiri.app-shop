@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Payment Portal</title>
+    <link rel="stylesheet" href="/devices/css/device-style-1.css">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" media="all">
+    <script src="/devices/js/deviceModule.js"></script>
+    <script src="/devices/js/productsModule.js"></script>
+    <script>
+        function initializeProducts() {
+            productsModule([
+                { amount: 5, desc: 'Quick Wash', active: false },
+                { amount: 7, desc: 'Light Wash', active: false },
+                { amount: 10, desc: 'Medium Wash', active: true },
+                { amount: 15, desc: 'Long Wash', active: false },
+            ]);            
+        };
+    </script>
+</head>
+<body>
+    <div class="payment-card">
+        <div class="merchant-name">Demo Ltd</div>
+        
+        <h1 class="product-title">Demo Car Wash</h1>
+
+        <div id="app">
+            <p>Loading please wait...</p>
+        </div>
+    </div>
+
+</body>
+</html>
